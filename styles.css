@@ -1,0 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,200&display=swap');
+.encabezado{
+    background-color: aqua;
+    padding-top: 3px;
+    font-family: 'Truculenta', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
