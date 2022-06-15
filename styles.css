@@ -36,3 +36,26 @@ body{
     font-size: 30px;
     text-align: center;
 }
+
+.formulario{
+    color: beige;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+
+::-webkit-input-placeholder { 
+    color: rgb(92, 67, 67);
+    font-weight: bold;
+    font-family: 'Shadows Into Light', cursive;
+   }
+   
+   
+   ::-webkit-textarea-placeholder {
+    color: rgb(67, 122, 67);
+   }
+   
+   
+
+   
