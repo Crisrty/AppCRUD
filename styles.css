@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
 
 body{
     background-color: rgb(92, 67, 67);
@@ -32,7 +33,7 @@ body{
 
 .descrip{
     color: beige;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Assistant', sans-serif;
     font-size: 30px;
     text-align: center;
 }
@@ -44,18 +45,14 @@ body{
     margin-left: 35px;
 }
 
+.instruccion{
+    color: beige;
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    margin-left: 35px;
+}
 
-::-webkit-input-placeholder { 
-    color: rgb(92, 67, 67);
-    font-weight: bold;
-    font-family: 'Shadows Into Light', cursive;
-   }
-   
-   
-   ::-webkit-textarea-placeholder {
-    color: rgb(67, 122, 67);
-   }
-   
+
    
 
    

@@ -24,15 +24,40 @@
 
     <div class="formulario">      
         <h1>Formulario de tareas</h1>
-          <h3>Escribe tu nombre, el nombre de la tarea y la descripción: </h3>
-            <form action="submeter-formulario.php" method="post">       
-                  <p>
-                    <label>Nombre
-                      <span class="obligatorio">*</span>
-                    </label>
-                      <input placeholder="Escribe tu nombre">
-                  </p>
-            </form>
+          <h3 class="instruccion">Escribe tu nombre, el nombre de la tarea y la descripción: </h3>
+          <h1>
+            Contactos
+        </h1>
+        <form id="contacto-form">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Tarea</label>
+                <input type="tar" class="form-control" id="inputTarea" placeholder="Tarea">
+            </div>
+            <button class="btn btn-primary" type="submit">Subir Tarea</button>
+        </form>
+    </div>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Tarea</th>
+                    <th scope="col">Edición</th>
+                </tr>
+            </thead>
+            <tbody id="body-tabla">
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
