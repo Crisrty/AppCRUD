@@ -7,26 +7,74 @@ const inputTarea = document.getElementById('inputTarea');
 const bodyTabla = document.getElementById('body-tabla');
 const ingredientes = []; //arreglo vacio
 
-formReceta.addEventListener('submit', function (event){
-    event.preventDefault(); //Evita que se refresque la pagina
-    //Imprimir los valores que ingresamos en la tabla
-    if(inputNombre.value.trim() !== '' && inputIngrediente.value.trim() !=='' && inputTarea.value.trim() !== ''){ //El .trim() nos ayuda a los espacios en blanco
+function agregarReceta(receta, ingrediente, tarea){
+    ingredientes.push({
+        receta,
+        ingrediente: ingrediente,
+        tarea: tarea,
+    })
+}
 
+function eliminarReceta(indice) {
+    ingredientes.splice(indice, 1);
+    mostrarRecetas();
+}
+
+function mostrarRecetas() {
+    bodyTabla.innerHTML = '';
+    ingredientes.forEach(function (recet, indice) {
         bodyTabla.innerHTML +=  `<tr>
-        <th scope="row">1</th>
-        <td>${inputNombre.value} </td>
-        <td>${inputIngrediente.value} </td>
-        <td>${inputTarea.value} </td>
+        <th scope="row">${indice+1}</th>
+        <td>${recet.receta} </td>
+        <td>${recet.ingrediente} </td>
+        <td>${recet.tarea} </td>
+        <td>
+        <button class="btn btn-warning" onclick="editarRecetaPrompt(${indice}, prompt('Ingresa Receta'), prompt('Ingrediente'), prompt('Uso o tarea'))">editar</button>
+        <button class="btn btn-danger" onclick="eliminarReceta(${indice})">eliminar</button>        
+        </td>
       </tr>`
+    })
+}
 
-      event.target.reset();
-    }else{
-        alert('Los tres campos son obligatorios');
+function editarReceta(indice) {
+    ingredientes[indice].receta = prompt('Ingresa un nueva Receta.');
+    ingredientes[indice].ingrediente = prompt('Ingresa un nuevo Ingrediente.');
+    ingredientes[indice].tarea = prompt('Ingresa un nuevo uso o tarea.');
+    mostrarRecetas();
+}
+
+function editarRecetaPrompt(indice, receta, ingrediente, tarea) {
+
+    ingredientes[indice] = {
+        receta: receta,
+        ingrediente,
+        tarea,
     }
 
-    //Imprime los valores en la consola
-    console.log(inputNombre.value);
-    console.log(inputIngrediente.value);
-    console.log(inputTarea.value);
-})
+    mostrarRecetas();
+}
+
+formReceta.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    if (inputNombre.value.trim() !== '' && inputIngrediente.value.trim() !== '' && inputTarea.value.trim() !== '') {
+
+        bodyTabla.innerHTML = '';
+
+        agregarReceta(inputNombre.value, inputIngrediente.value, inputTarea.value);
+
+        mostrarRecetas();
+
+        event.target.reset();
+    } else {
+        alert('Los 3 campos son obligatorios');
+    }
+});
+
+
+
+
+
+
+
 
