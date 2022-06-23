@@ -29,8 +29,8 @@ function mostrarRecetas() {
         <td>${recet.ingrediente} </td>
         <td>${recet.tarea} </td>
         <td>
-        <button class="btn btn-warning" onclick="editarRecetaPrompt(${indice}, prompt('Ingresa Receta'), prompt('Ingrediente'), prompt('Uso o tarea'))">editar</button>
-        <button class="btn btn-danger" onclick="eliminarReceta(${indice})">eliminar</button>        
+        <button class="botonEditar" onclick="editarRecetaPrompt(${indice}, prompt('Ingresa Receta'), prompt('Ingrediente'), prompt('Uso o tarea'))">Editar</button>
+        <button class="botonEliminar" onclick="eliminarReceta(${indice})">Eliminar</button>        
         </td>
       </tr>`
     })

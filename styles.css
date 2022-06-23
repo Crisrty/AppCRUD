@@ -1,7 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
 body{
-    background-color: rgb(224, 174, 158);
+    background-color: rgb(1, 1, 19);
 }
 
-   
+.tituloRecetas{
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    color: rgb(250, 211, 211);
+}
 
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tituloapp{
+    font-family: 'Patrick Hand', cursive;
+    margin-left: 500px;
+    font-size: 60px;
+    color: rgb(250, 211, 211);
+}
+
+.tituloproyecto{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 15px;
+    color: rgb(250, 211, 211);
+    margin-top: 45px;
+    margin-left: 350px;
+}
+
+.parrafo{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    color: rgb(214, 163, 163);
+    text-align: center;
+}
+
+.form-label{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    color: rgb(250, 211, 211);
+    margin-left: 100px;
+}
+
+.validar{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    color: rgb(250, 211, 211);
+    margin-left: 100px;
+}
+
+.form-control{
+    width: 650px;
+    margin-left: 150px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 18px;
+    color: rgb(1, 1, 19);
+}
+
+.botonAgregar{
+    margin-left: 550px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgb(214, 163, 163);
+    font-size: 18px;
+    color: rgb(1, 1, 19);
+    font-family: 'Patrick Hand', cursive;
+}
+
+.botonEditar{
+    background-color: rgb(255, 145, 0);
+    font-family: 'Patrick Hand', cursive;
+}
    

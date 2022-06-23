@@ -14,23 +14,34 @@
 </head>
 
 <body>
-<h1>Ingredientes para Receta</h1>
+
+    <header class="encabezado">
+        <div>
+            <h1 class="tituloapp">App CRUD</h1>
+        </div>
+        <div>
+            <h2 class="tituloproyecto">Proyecto 2 Bootcamp Ucamp</h2>
+        </div>
+    </header>
+<p class="parrafo">¡Bienvenido a la app que te permite ingresar el nombre de tu receta, los ingredientes y <br>las tareas o el uso que le vas a dar a cada uno de ellos!</p>
+<h1 class="tituloRecetas">¿Qué necesitamos para nuestra receta?</h1>
 
 <main>
     <form id="form-receta">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <label for="exampleInputEmail1" class="form-label">*Nombre:</label>
           <input type="text" class="form-control" id="inputNombre" placeholder="Escribe el nombre de la receta">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Ingrediente</label>
+            <label for="exampleInputEmail1" class="form-label">*Ingrediente:</label>
             <input type="text" class="form-control" id="inputIngrediente" placeholder="Escribe el ingrediente">
           </div>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Uso o tarea</label>
+            <label for="exampleInputEmail1" class="form-label">*Uso o tarea:</label>
             <input type="text" class="form-control" id="inputTarea" placeholder="Escribe su uso o tarea">
           </div>
-        <button type="submit" class="btn btn-primary">Agregar</button>
+          <h3 class="validar">*Los campos son requeridos</h3>
+        <button type="submit" class="botonAgregar">Agregar!</button>
       </form>
 
       <table class="table">
