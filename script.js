@@ -34,6 +34,7 @@ function mostrarRecetas() {
         </td>
       </tr>`
     })
+    guardarRecetasStorage();
 }
 
 function editarReceta(indice) {
@@ -71,8 +72,16 @@ formReceta.addEventListener('submit', function (event) {
     }
 });
 
+function guardarRecetasStorage(){
+    const guardarRecetas = JSON.stringify(ingrediente);
+    localStorage.setItem('ingredientes', guardarRecetas);
+}
 
+function obtenerContactosStorage() {
+    const recetaStorage = localStorage.getItem('ingredientes');
 
+    ingredientes = recetaStorage == null ? [] : JSON.parse(recetaStorage);
+}
 
 
 

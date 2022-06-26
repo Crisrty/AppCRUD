@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-
-
 body{
     background-color: rgb(1, 1, 19);
 }
@@ -72,8 +70,45 @@ body{
     font-family: 'Patrick Hand', cursive;
 }
 
-.botonEditar{
-    background-color: rgb(255, 145, 0);
+.table{
     font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    color: rgb(250, 211, 211);
+    margin-top: 80px;
 }
-   
+
+.botonEditar{
+    background-color: rgb(240, 218, 25);
+    font-family: 'Patrick Hand', cursive;
+    color: rgb(1, 1, 19);
+    border-radius: 8px;
+}
+
+.botonEliminar{
+    background-color: rgb(228, 32, 32);
+    font-family: 'Patrick Hand', cursive;
+    color:rgb(1, 1, 19);
+    border-radius: 8px;
+}
+
+.pie{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pie1{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(250, 211, 211);
+    margin-top: 80px;
+}
+
+.pie2{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(250, 211, 211);
+    margin-top: 90px;
+}
