@@ -1,4 +1,3 @@
-
 const formReceta = document.getElementById('form-receta'); //Id del formulario
 //obtener los valores de los campos
 const inputNombre = document.getElementById('inputNombre');
@@ -77,12 +76,13 @@ function guardarRecetasStorage(){
     localStorage.setItem('ingredientes', guardarRecetas);
 }
 
-function obtenerContactosStorage() {
+function obtenerRecetasStorage() {
     const recetaStorage = localStorage.getItem('ingredientes');
 
     ingredientes = recetaStorage == null ? [] : JSON.parse(recetaStorage);
 }
 
+obtenerRecetasStorage();
 
 
 

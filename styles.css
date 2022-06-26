@@ -112,3 +112,50 @@ body{
     color: rgb(250, 211, 211);
     margin-top: 90px;
 }
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .tituloapp{
+        margin-left: 200px;
+        font-size: 40px;
+    }
+
+}
+
+ @media only screen and (max-width: 768px) {
+
+    .tituloapp{
+        margin-left: 100px;
+        font-size: 45px;
+    }
+    .form-control{
+        width: 500px;
+}
+ }
+
+@media only screen and (max-width: 576px) {
+
+    .encabezado {
+
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .tituloapp{
+        margin-left: 100px;
+        font-size: 45px;
+    }
+
+    .form-control{
+        width: 250px;
+}
+.tituloproyecto{
+    margin-top: 25px;
+    margin-left: 80px;
+}
+.botonAgregar{
+    margin-left: 150px;
+}
+}
