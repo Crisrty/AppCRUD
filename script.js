@@ -33,7 +33,6 @@ function mostrarRecetas() {
         </td>
       </tr>`
     })
-    guardarRecetasStorage();
 }
 
 function editarReceta(indice) {
@@ -71,19 +70,19 @@ formReceta.addEventListener('submit', function (event) {
     }
 });
 
-function guardarRecetasStorage(){
-    const guardarRecetas = JSON.stringify(ingrediente);
-    localStorage.setItem('ingredientes', guardarRecetas);
+
+const enviarinfo = () => {
+    
+    let rece = document.getElementById("inputNombre").value;
+    let ingre = document.getElementById("inputIngrediente").value;
+    let tare = document.getElementById("inputTarea").value;
+    let todo = rece + " " + ingre + " " + tare;
+
+    localStorage.setItem("Resumen", todo);
+
 }
 
-function obtenerRecetasStorage() {
-    const recetaStorage = localStorage.getItem('ingredientes');
-
-    ingredientes = recetaStorage == null ? [] : JSON.parse(recetaStorage);
+const limpiarinfo = () => {
+    localStorage.removeItem ("Resumen");
 }
-
-obtenerRecetasStorage();
-
-
-
 

@@ -113,6 +113,16 @@ body{
     margin-top: 90px;
 }
 
+.botonLimpiar{
+    margin-top: 350px;
+    background-color: rgb(233, 100, 38);
+    font-family: 'Patrick Hand', cursive;
+    color: rgb(1, 1, 19);
+    font-size: 20px;
+    border-radius: 8px;
+    margin-left: 550px;
+}
+
 
 
 
@@ -159,3 +169,5 @@ body{
     margin-left: 150px;
 }
 }
+
+
